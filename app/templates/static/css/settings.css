@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.settings-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.settings-card {
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.settings-card h1 {
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.setting-item p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.setting-item button {
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #6366f1;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.setting-item button:hover {
+    transform: translateY(-2px);
+}
+
+.logout-btn {
+    background: #ef4444 !important;
+}
+
+/* Toggle Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #475569;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background: #6366f1;
+}
+
+input:checked+.slider:before {
+    transform: translateX(27px);
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .settings-card {
+        padding: 20px;
+    }
+
+    .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}

@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #020617,
+            #050816,
+            #020617);
+
+    color: white;
+
+    position: relative;
+}
+
+/* ORBS */
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: .45;
+}
+
+.orb1 {
+    width: 350px;
+    height: 350px;
+    background: #3b82f6;
+    top: -100px;
+    left: -100px;
+}
+
+.orb2 {
+    width: 300px;
+    height: 300px;
+    background: #8b5cf6;
+    bottom: -100px;
+    right: -100px;
+}
+
+/* CARD */
+
+.otp-card {
+
+    width: 520px;
+
+    padding: 45px;
+
+    border-radius: 32px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(30px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    text-align: center;
+}
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.logo-dot {
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(135deg,
+            #22d3ee,
+            #3b82f6);
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+p {
+
+    color:
+        rgba(255, 255, 255, 0.7);
+
+    margin-bottom: 35px;
+}
+
+/* OTP */
+
+.otp-boxes {
+
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.otp-boxes input {
+
+    width: 60px;
+    height: 65px;
+
+    border: none;
+    outline: none;
+
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    color: white;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* BUTTON */
+
+.verify-btn {
+
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 16px;
+
+    color: white;
+
+    font-size: 16px;
+
+    background:
+        linear-gradient(135deg,
+            #3b82f6,
+            #22d3ee);
+}
+
+/* TIMER */
+
+.resend {
+
+    margin-top: 25px;
+
+    color:
+        rgba(255, 255, 255, 0.7);
+}
+
+#timer {
+    color: #22d3ee;
+}

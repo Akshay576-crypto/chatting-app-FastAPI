@@ -1,0 +1,115 @@
+chat_app/
+│
+├── app/
+│   │
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── dependencies.py
+│   │
+│   ├── routes/
+│   │   ├── auth_routes.py
+│   │   ├── chat_routes.py
+│   │   ├── user_routes.py
+│   │   ├── otp_routes.py
+│   │   ├── upload_routes.py
+│   │   └── websocket_routes.py
+│   │
+│   ├── schemas/
+│   │   ├── auth_schema.py
+│   │   ├── user_schema.py
+│   │   ├── chat_schema.py
+│   │   └── otp_schema.py
+│   │
+│   ├── services/
+│   │   ├── auth_service.py
+│   │   ├── chat_service.py
+│   │   ├── otp_service.py
+│   │   ├── websocket_service.py
+│   │   ├── ml_service.py
+│   │   └── upload_service.py
+│   │
+│   ├── database/
+│   │   ├── connection.py
+│   │   ├── user_queries.py
+│   │   ├── chat_queries.py
+│   │   ├── otp_queries.py
+│   │   └── upload_queries.py
+│   │
+│   ├── utils/
+│   │   ├── jwt_handler.py
+│   │   ├── password_hash.py
+│   │   ├── otp_generator.py
+│   │   ├── logger.py
+│   │   ├── validators.py
+│   │   └── helpers.py
+│   │
+│   ├── middleware/
+│   │   ├── auth_middleware.py
+│   │   └── logging_middleware.py
+│   │
+│   ├── websocket/
+│   │   ├── connection_manager.py
+│   │   └── websocket_handler.py
+│   │
+│   ├── ml_models/
+│   │   ├── spam_detector.pkl
+│   │   ├── sentiment_model.pkl
+│   │   └── vectorizer.pkl
+│   │
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── signup.html
+│   │   ├── otp.html
+│   │   ├── forgot_password.html
+│   │   ├── dashboard.html
+│   │   ├── profile.html
+│   │   └── settings.html
+│   │
+│   ├── static/
+│   │   │
+│   │   ├── css/
+│   │   │   ├── style.css
+│   │   │   ├── login.css
+│   │   │   ├── signup.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── profile.css
+│   │   │   └── settings.css
+│   │   │
+│   │   ├── js/
+│   │   │   ├── login.js
+│   │   │   ├── signup.js
+│   │   │   ├── otp.js
+│   │   │   ├── dashboard.js
+│   │   │   ├── websocket.js
+│   │   │   └── profile.js
+│   │   │
+│   │   ├── images/
+│   │   │   ├── logo.png
+│   │   │   ├── background.jpg
+│   │   │   └── avatars/
+│   │   │
+│   │   └── uploads/
+│   │       ├── profile_images/
+│   │       └── chat_files/
+│   │
+│   ├── logs/
+│   │   ├── app.log
+│   │   ├── error.log
+│   │   └── websocket.log
+│   │
+│   └── tests/
+│       ├── test_auth.py
+│       ├── test_chat.py
+│       ├── test_websocket.py
+│       ├── test_users.py
+│       └── test_ml.py
+│
+├── .env
+├── requirements.txt
+├── README.md
+├── Dockerfile
+├── docker-compose.yml
+├── run.py
+└── .gitignore
